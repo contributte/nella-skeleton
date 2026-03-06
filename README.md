@@ -2,7 +2,7 @@
 
 <p align=center>
   <a href="https://github.com/contributte/nella-skeleton/actions"><img src="https://badgen.net/github/checks/contributte/nella-skeleton/master"></a>
-  <a href="https://coveralls.io/r/contributte/nella-skeleton"><img src="https://badgen.net/coveralls/c/github/contributte/nella-skeleton"></a>
+  <a href="https://codecov.io/gh/contributte/nella-skeleton"><img src="https://badgen.net/codecov/c/github/contributte/nella-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/nella-skeleton"><img src="https://badgen.net/packagist/dm/contributte/nella-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/nella-skeleton"><img src="https://badgen.net/packagist/v/contributte/nella-skeleton"></a>
 </p>
