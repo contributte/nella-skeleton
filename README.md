@@ -26,7 +26,7 @@ Website ðŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ðŸ‘
 
 ## Goal
 
-Main goal is to show how [contributte/nella](https://github.com/contributte/sentry) can boost your [Nette](https://nette.org) based project..
+This skeleton demonstrates how [contributte/nella](https://github.com/contributte/nella) can be used in a [Nette](https://nette.org)-based project.
 
 ## Demo
 
@@ -40,9 +40,12 @@ Create project using composer.
 
 ```bash
 composer create-project -s dev contributte/nella-skeleton acme
+cd acme
+make init
+make project
 ```
 
-Now you have application installed. It's time to run it.
+`make init` creates `config/local.neon` from the local configuration template. Keep machine-specific parameters and service definitions there.
 
 ## Startup
 
@@ -53,7 +56,20 @@ make dev
 # php -S 0.0.0.0:8000 -t www
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000) in your browser.
+Then visit [http://localhost:8000](http://localhost:8000) in your browser. This repository does not include a Docker Compose definition; use the built-in server above for the bundled local setup.
+
+## Commands
+
+```bash
+make qa       # coding standard and static analysis
+make tests    # run Tester tests
+make csf      # fix coding style
+make clean    # remove temporary files and logs
+```
+
+## Configuration
+
+The shared Nette configuration is `config/config.neon`; local overrides belong in the ignored `config/local.neon` created by `make init`.
 
 ## Development
 
